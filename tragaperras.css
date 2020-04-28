@@ -1,0 +1,83 @@
+body {
+  background-color:black;
+  color:white;
+  font-family: 'Questrial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.col-1{
+  //border:solid 1px red;
+}
+
+#fondoRuedas {
+    background: url(img/degmetal01.png) repeat fixed center;
+   -webkit-background-size: 100%;
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%;
+   text-align: center;
+   max-width: 100%;
+   border: solid 9px #e2e3e5;
+   -moz-border-radius: 15px;
+  -webkit-border-radius:15px;
+  margin-bottom:1px;
+
+}
+#monedero {
+
+}
+
+#contenedor {
+  //border: solid 3px yellow;
+}
+#rueda1, #rueda2, #rueda3 {
+  margin: 0px auto;
+  background-color: black;
+
+}
+
+#tiraRueda1, #tiraRueda2, #tiraRueda3 {
+  font-size:2em;
+  background: #f6931e;
+  border: solid 2px #e2e3e5;
+  -moz-border-radius: 9px;
+  -webkit-border-radius:9px;
+}
+
+.btnrueda {
+  margin: 0px auto;
+}
+
+#palanca {
+  position: absolute;
+  float:left;
+}
+.divpalanca {
+
+}
+
+.img_palanca {
+
+}
+
+.divBotonera {
+  border: solid 9px #e2e3e5;
+  -moz-border-radius: 15px;
+ -webkit-border-radius:15px;
+ margin-bottom:1px;
+}
+
+.botones_ruedas {
+  text-align: center;
+}
+
+.pie_maquina {
+  border: solid 9px #e2e3e5;
+  -moz-border-radius: 15px 15px 0px 0px;
+ -webkit-border-radius:15px 15px 0px 0px;
+ margin-top:1px;
+}
