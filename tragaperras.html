@@ -17,14 +17,14 @@
     <div class="mt-5"></div>
     <div class="row">
       <div class="col-1"></div>
-      <div class="col-10 divBotonera">
+      <div class="col-10 divCabecera">
         <div class="row">
           <div id="monedero" class="col-5">
-            <p>Monedas que me quedan</p>
+            <h5 id="pantalla">Te quedan <b id="monedas"></b> monedas</h5>
           </div>
           <div class="col-2"></div>
           <div class="col-5">
-            <p>hueco</p>
+            <button class="btn btn-danger blink" id="palanca">Tirar de la palanca</button>
           </div>
         </div>
       </div>
@@ -35,21 +35,21 @@
       <div class="col-1"></div>
       <div id="fondoRuedas" class="col-10">
         <div class="row my-2">
-          <div id="rueda1" class="col-3"><img src="img/herradura.png" alt=""></div>
-          <div id="rueda2" class="col-3"><img src="img/siete.png" alt=""></div>
-          <div id="rueda3" class="col-3"><img src="img/campana.png" alt=""></div>
+          <div id="rueda1" class="col-3"></div>
+          <div id="rueda2" class="col-3"></div>
+          <div id="rueda3" class="col-3"></div>
         </div>
       </div>
-      <div class="col-1 divpalanca"><img class="img_palanca" src="img/palanca.png" alt="palanca"></div>
+      <div class="col-1 divpalanca"><!--<img id="palanca" class="img_palanca" src="img/palanca.png" alt="palanca">--></div>
     </div>
 
     <div class="row">
       <div class="col-1"></div>
       <div class="col-10 divBotonera">
         <div class="row botones_ruedas">
-          <div class="col-3 btnrueda mt-3"><p id="tiraRueda1">Tira 1</p></div>
-          <div class="col-3 btnrueda mt-3"><p id="tiraRueda2">Tira 2</p></div>
-          <div class="col-3 btnrueda mt-3"><p id="tiraRueda3">Tira 3</p></div>
+          <div class="col-3 btnrueda mt-3 "><button class="btn btn-warning" id="tiraRueda1">Tira 1</button></div>
+          <div class="col-3 btnrueda mt-3 "><button class="btn btn-warning" id="tiraRueda2">Tira 2</button></div>
+          <div class="col-3 btnrueda mt-3 "><button class="btn btn-warning" id="tiraRueda3">Tira 3</button></div>
         </div>
       </div>
       <div class="col-1"></div>
@@ -62,8 +62,6 @@
     </div>
 
   </div>
-
-
 
 
 
