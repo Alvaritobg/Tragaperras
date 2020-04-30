@@ -1,9 +1,3 @@
-
-window.onload=inicio;
-function inicio() {
-  document.getElementById("palanca").onclick = tirar;
-}
-
 var ruedas = 3;
 var figuras = ['herradura', 'campana', 'trebol', 'estrella', 'diamante',
     'cereza', 'siete', 'corona', 'sandia', 'fresa'
@@ -17,9 +11,8 @@ function tirar() {
         document.getElementById("monedas").innerHTML = `${--monedas}`;
         for (var i = 1; i <= ruedas; i++) {
             tirarRueda(i);
-
         }
-
+        comprobar();
     } else {
         alert("no te quedan monedas");
     }
@@ -28,20 +21,11 @@ function tirar() {
 function tirarRueda(i) {
     let r1 = Math.floor(Math.random() * figuras.length);
     document.getElementById(`rueda${i}`).innerHTML = `<img src="img/${figuras[r1]}.png" alt="${figuras[r1]}">`;
-    //comprobar();
-
 }
 
-function comprobar {
-  if () {
-    alert=("Premio");
-    ++monedas;
-  }
-}
-
-//function comprobar() {
-    //if (r1 === r2 && r1 === r3 && r2 == r3) {
-        //alert("Premio");
-        //monedas = monedas + 10;
-    //}
+function comprobar() {
+    if (r1 === r2 && r1 === r3 && r2 == r3) {
+        alert("Premio");
+        monedas = monedas + 10;
+    }
 }
