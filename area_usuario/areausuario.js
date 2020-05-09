@@ -11,9 +11,13 @@ class IniAreausuario {
   static get FORM_ID() {
     return document.querySelector('#inputIdUsuario');
   }
-    static get PINTAR_USER_NAME() {
+  static get PINTAR_USER_NAME() {
       return document.querySelector('#hUsuario');
   }
+  static get PINTAR_USER_POST() {
+    return document.querySelector('.ultimosPostUsuario');
+  }
+
 
   //funcion para manejar ajax call (Promesas)
   ajaxCall(url) {
@@ -23,18 +27,21 @@ class IniAreausuario {
       .catch(err => `Problemas obteniendo la información ${err}`);
   }
   //guarda y pintara la info obtenida de Json (method)
-  pintorDatos(user) {
+  pintorDatos(user, posts) {
     //const { name, username } = user;
     const pintarUserName = `<strong>${user}</strong>`;
-    IniAreausuario.PINTAR_USER_NAME.innerHTML = pintarUserName;
+    const pintarPostTitulos = posts.map(post => `<li><i class="fas fa-caret-right"> ${post.title}</li>`);
+      IniAreausuario.PINTAR_USER_NAME.innerHTML = pintarUserName;
+      IniAreausuario.PINTAR_USER_POST.innerHTML = pintarPostTitulos;
+
+
   }
   // Funcion para realizar las llamadas de usuarios, post y comentarios (Generadores)
   *obtenerInfo(usuarioIdentificador) {
     const user = yield this.ajaxCall(`${IniAreausuario.URL_BASE}/users/${usuarioIdentificador}`);
     const posts = yield this.ajaxCall(`${IniAreausuario.URL_BASE}/posts?userId=${usuarioIdentificador}`);
-    console.log(usuarioIdentificador);
     // no funciona y no da error -> console.log(user, posts);
-    this.pintorDatos(user);
+    this.pintorDatos(user, posts);
   }
   //Comprueba que lo introducido en el input es una id valida
   comprobarId() {}
