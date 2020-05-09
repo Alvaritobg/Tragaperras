@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font awsome iconos -->
+  <script src="https://kit.fontawesome.com/534dc02a7b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- css propia -->
+  <link rel="stylesheet" href="areausuario.css">
+  <title>Area personal</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- esta capa desaparecerá cuando se ingrese el id si es correcto dando paso al panel-->
+    <div class="row" id="contenedorLogin">
+      <div class="col-3"></div>
+      <div class="col-6 mt-5 py-3 card text-center">
+        <h1 id="bienvenida">Bienvenido</h1>
+        <p>Introduzca su ID de Usuario para continuar.</p>
+        <form>
+          <div class="form-group row form-inline">
+            <div class="col">
+              <input class="form-control" type="text" placeholder="Su ID de usuario aquí">
+              <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-5"></div>
+    </div>
+    <!-- esto seria el panel de usuario -->
+    <div class="row" id="cuerpoPanel">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <div class="card">
+          <div id="dImgPerfil">
+
+          </div>
+
+          <div class="card-header text-center" id="hUsuario">
+            <strong>Usuario</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="far fa-envelope"></i> usuario@gmail.com</li>
+            <li class="list-group-item"><i class="fas fa-link"></i> <a href="#">www.loquesea.com</a></li>
+            <li class="list-group-item"><i class="fas fa-phone"></i> +34 685 43 57 53</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="col-7">
+
+        <div class="card mb-3">
+          <div class="card-header"><strong>Bienvenido Usuario</strong></div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+      <p>En este panel encontraras información sobre toda tu actividad en el portal.</p>
+      <footer class="blockquote-footer">No dudes en preguntar si necesitas <a href="#">ayuda</a>.</footer>
+    </blockquote>
+
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-header">Últimos post</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Cras justo odio</li>
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Dapibus ac facilisis in</li>
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="card mb-3">
+          <div class="card-header">Últimos Comentarios</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
+            <li class="list-group-item"><i class="fas fa-caret-right"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Últimas fotos</div>
+        </div>
+        <div class="card-deck my-3">
+          <div class="card">
+            <img src="img.png" class="card-img-top" alt="img">
+
+          </div>
+  <div class="card">
+    <img src="img.png" class="card-img-top" alt="img">
+
+  </div>
+  <div class="card">
+    <img src="img.png" class="card-img-top" alt="img">
+
+  </div>
+</div>
+
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
