@@ -19,8 +19,8 @@ class IniAreausuario {
   }
 
   //funcion para manejar ajax call (Promesas)
-  ajaxCall(url) {
-    fetch(url)
+  ajaxCall (url) {
+    fetch (url)
       .then(data => data.json(data))
       .then(data => this.generadorDatos.next(data))
       .catch(err => `Problemas obteniendo la información ${err}`);
@@ -28,9 +28,9 @@ class IniAreausuario {
 
   //guarda y pintara la info obtenida de Json (method)
   pintorDatos(user, posts) {
-    const {name, username} = user;
+    const {name, username, email, phone} = user;
     const pintarUserName = `<strong>${username}</strong>`;
-    const pintarPostTitulos = posts.map(post => `<li><i class="fas fa-caret-right"> ${post.title}</li>`).join('');
+    const pintarPostTitulos = posts.map(post => `<li><i class="fas fa-caret-right"> ${post.title}</li>`).join(' ');
       IniAreausuario.PINTAR_USER_NAME.innerHTML = pintarUserName;
       IniAreausuario.PINTAR_USER_POST.innerHTML = pintarPostTitulos;
   }
@@ -42,7 +42,9 @@ class IniAreausuario {
     this.pintorDatos(user, posts);
   }
   //Comprueba que lo introducido en el input es una id valida
-  comprobarId() {}
+  comprobarId() {
+    
+  }
   //obtiene id usuario del imput y inicia el generador
   getIdUsuario() {
     const usuarioIdentificador = IniAreausuario.FORM_ID.value;
