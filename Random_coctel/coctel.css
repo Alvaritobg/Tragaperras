@@ -1,0 +1,45 @@
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Oswald', sans-serif;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li {
+  margin-left: 1em;
+  list-style-type: none;
+  margin-bottom: 5px;
+  display: inline;
+}
+
+#coctel {
+  display: none;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.7);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.imgcoctel {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.imgcoctel:hover {
+  filter: opacity(.8);
+}
+
+.divimg {}
