@@ -22,19 +22,19 @@ const crearCoctel = (coctel) => {
 
 	const newInnerHTML = `
 		<div class="row">
-			<div class="col-md-5 divimg">
+			<div class="col-12 col-md-12 col-lg-5 divimg">
 
-        <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}" class="img-fluid imgcoctel">
+        <img src="${coctel.strDrinkThumb}" alt="${coctel.strDrink}" class="img-fluid imgcoctel mb-3">
 
 
 
 			</div>
-			<div class="col-md-7">
+			<div class="col-12 col-md-12 col-lg-7">
 				<h2 class="">${coctel.strDrink}</h3>
         <hr>
 
 				<ul>
-					${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+					${ingredients.map(ingredient => `<li><i class="far fa-check-square"></i> ${ingredient}</li>`).join('')}
 				</ul>
         <hr>
 				<p>${coctel.strInstructions}</p>

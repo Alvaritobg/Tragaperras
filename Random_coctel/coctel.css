@@ -34,12 +34,15 @@ ul li {
 }
 
 .imgcoctel {
+
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
 
 .imgcoctel:hover {
-  filter: opacity(.8);
+filter: grayscale(80%);
+  box-shadow: 0px 0px 5px 5px rgba(151, 150, 152, 0.37);
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(151, 150, 152, 0.37);
 }
 
 .divimg {}
