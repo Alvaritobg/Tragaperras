@@ -1,4 +1,4 @@
-//creo constantes con valores que necesitare luego
+
 const btn_coctel = document.getElementById('botonCoctel');
 const div_contenedor_coctel = document.getElementById('coctel');
 

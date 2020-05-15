@@ -12,27 +12,33 @@ class IniAreausuario {
     return document.querySelector('#inputIdUsuario');
   }
   static get PINTAR_USER_NAME() {
-      return document.querySelector('#hUsuario');
+    return document.querySelector('#hUsuario');
   }
   static get PINTAR_USER_POST() {
     return document.querySelector('.ultimosPostUsuario');
   }
 
-  //funcion para manejar ajax call (Promesas)
-  ajaxCall (url) {
-    fetch (url)
+  //funcion para hacer ajax call
+  ajaxCall(url) {
+    fetch(url)
       .then(data => data.json(data))
-      .then(data => this.generadorDatos.next(data))
-      .catch(err => `Problemas obteniendo la información ${err}`);
+      .then(data => this.genDatos.next(data))
+      //.catch(err => `Problemas obteniendo la información ${err}`);
   }
+
 
   //guarda y pintara la info obtenida de Json (method)
   pintorDatos(user, posts) {
-    const {name, username, email, phone} = user;
+    const {
+      name,
+      username,
+      email,
+      phone
+    } = user;
     const pintarUserName = `<strong>${username}</strong>`;
     const pintarPostTitulos = posts.map(post => `<li><i class="fas fa-caret-right"> ${post.title}</li>`).join(' ');
-      IniAreausuario.PINTAR_USER_NAME.innerHTML = pintarUserName;
-      IniAreausuario.PINTAR_USER_POST.innerHTML = pintarPostTitulos;
+    IniAreausuario.PINTAR_USER_NAME.innerHTML = pintarUserName;
+    IniAreausuario.PINTAR_USER_POST.innerHTML = pintarPostTitulos;
   }
 
   // Funcion para realizar las llamadas de usuarios, post y comentarios (Generadores)
@@ -43,13 +49,13 @@ class IniAreausuario {
   }
   //Comprueba que lo introducido en el input es una id valida
   comprobarId() {
-    
+
   }
   //obtiene id usuario del imput y inicia el generador
   getIdUsuario() {
     const usuarioIdentificador = IniAreausuario.FORM_ID.value;
-    this.generadorDatos = this.obtenerInfo(usuarioIdentificador);
-    this.generadorDatos.next();
+    this.genDatos = this.obtenerInfo(usuarioIdentificador);
+    this.genDatos.next();
   }
   // inicia al hacer click en el boton aceptar
   init() {
