@@ -1,0 +1,26 @@
+body {
+  background-image: url('bgcv.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#contenedor {
+  background: rgba(0, 0, 0, 0.44);
+  margin-top: 0px;
+  padding: 10px;
+  ;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+
+#div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #divf {
+  display: none;
+}
+
+#audio {
+  display: none
+}
+
+.logo {
+  height: 2em;
+}
